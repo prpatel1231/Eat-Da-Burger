@@ -1,6 +1,5 @@
 body{
     background-color: cadetblue;
-    background-image: url("/assets/img/abstract-antique-backdrop-background-163999.jpg");
 }
 h1, h3{
     color:rgb(107, 4, 4);
@@ -10,17 +9,13 @@ h1, h3{
     max-width: 350px;
     margin: auto;
 }
-#burgerpic{
-    height: 75%;
-    width: 75%;
-}
 .create-form{
     text-align: center;
 }
 textarea{
     resize: none;
 }
-.eatNoeat, .delete, #btnSubmit{
+.eat, .delete, #btnSubmit{
     background-color: transparent;
     border: none;
     cursor: pointer;

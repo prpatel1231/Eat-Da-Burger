@@ -34,7 +34,7 @@ $(function() {
         }
     })
 
-    $(".eatNoeat").on("click", function(event){
+    $(".eat").on("click", function(event){
         let id = $(this).data("id")
         let devoured = !($(this).data("devour"))
 
