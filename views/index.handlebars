@@ -1,0 +1,30 @@
+<div class="container-burgers">
+    <div class="row">
+        <div class="left-div">
+          <ul>
+            <h3></h3>
+              {{#each Burgers}}
+                {{#unless devoured}}
+                  <li class="liToEat">
+                    <textarea class="toEat" rows="1" cols= "30" disabled>{{id}}. {{burger_name}}</textarea>
+                    <button class="eatNoeat" data-id="{{id}}" data-devour="{{devoured}}" title="click to eat"><i class="fas fa-utensils"></i></button>
+                  </li>
+                {{/unless}}
+              {{/each}}
+          </ul>
+        </div>
+        <div class="right-div">
+          <ul>
+            <h3></h3>
+              {{#each Burgers}}
+                {{#if devoured}}
+                  <li class="liAte">
+                    <textarea class="display" rows="1" cols= "30" disabled>{{id}}. {{burger_name}}</textarea>
+                    <button class="delete" data-id="{{id}}" data-devour="{{devoured}}" data-name = "{{burger_name}}" title= "click to remove"><i class="far fa-trash-alt"></i></button>
+                  </li>
+                {{/if}}
+              {{/each}}
+          </ul>
+        </div>
+    </div>    
+</div>
